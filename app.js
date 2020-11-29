@@ -49,7 +49,7 @@ app.get("/", function (req, res) {
       INFO: process.env.INFO ? process.env.INFO : "",
       favicon: process.env.FAVICON
         ? process.env.FAVICON
-        : "https://cdn.jsdelivr.net/gh/heson10/pic@master/img/favicon.png",
+        : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/volantis-img-icon.png",
     });
   }
 });

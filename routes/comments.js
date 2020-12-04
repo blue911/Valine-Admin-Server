@@ -24,7 +24,7 @@ router.get("/", function (req, res, next) {
             zone: String(process.env.LEANCLOUD_REGION),
             favicon: process.env.FAVICON
               ? process.env.FAVICON
-              : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/volantis-img-icon.png",
+              : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/favicon.ico",
           });
         },
         function (err) {
@@ -34,7 +34,7 @@ router.get("/", function (req, res, next) {
               comment_list: [],
               favicon: process.env.FAVICON
                 ? process.env.FAVICON
-                : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/volantis-img-icon.png",
+                : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/favicon.ico",
             });
           } else {
             next(err);
@@ -47,7 +47,7 @@ router.get("/", function (req, res, next) {
     res.redirect("/", {
       favicon: process.env.FAVICON
         ? process.env.FAVICON
-        : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/volantis-img-icon.png",
+        : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/favicon.ico",
     });
   }
 });
@@ -95,7 +95,7 @@ router.get("/delete", function (req, res, next) {
     res.redirect("/", {
       : process.env.FAVICON
         ? process.env.FAVICON
-        : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/volantis-img-icon.png",
+        : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/favicon.ico",
     });
   }
 });

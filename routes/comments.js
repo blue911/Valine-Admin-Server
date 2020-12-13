@@ -93,7 +93,7 @@ router.get("/delete", function (req, res, next) {
       .catch(next);
   } else {
     res.redirect("/", {
-      : process.env.FAVICON
+      favicon: process.env.FAVICON
         ? process.env.FAVICON
         : "https://cdn.jsdelivr.net/gh/blue911/pic@master/img/favicon.png",
     });
